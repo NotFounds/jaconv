@@ -1,5 +1,7 @@
 # jaconv
 
+![workflow status](https://github.com/NotFounds/jaconv/workflows/Go/badge.svg)
+
 ## Description
 
 A converter that Japanese Hiragana/Katakana and Romaji.
