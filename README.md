@@ -4,7 +4,7 @@
 
 ## Description
 
-A converter that Japanese Hiragana/Katakana and Romaji.
+A converter to convert between Japanese Hiragana, Katakana and Romaji.
 
 ## Usage
 
