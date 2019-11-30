@@ -26,6 +26,8 @@ func TestKana2romaji(t *testing.T) {
 	kana2romajiHelper(t, "オオノ", "ono")
 	kana2romajiHelper(t, "たかとお", "takatoo")
 	kana2romajiHelper(t, "イトウ", "ito")
+	kana2romajiHelper(t, "フジサン", "fujisan")
+	kana2romajiHelper(t, "ハッチョウ", "hatcho")
 }
 
 func TestRomaji2kana(t *testing.T) {
