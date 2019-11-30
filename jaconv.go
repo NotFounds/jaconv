@@ -1,8 +1,9 @@
 package jaconv
 
 import (
-	conversion "jaconv/lib"
 	"strings"
+
+	conversion "github.com/NotFounds/jaconv/lib"
 )
 
 // Romaji2Kana return string
@@ -28,8 +29,6 @@ func Kana2Romaji(text string) string {
 			switch nextChara {
 			case 'b', 'm', 'p':
 				romaji = append(romaji, 'm')
-			case 'a', 'i', 'u', 'e', 'o':
-				romaji = append(romaji, []rune("nn")...)
 			default:
 				romaji = append(romaji, 'n')
 			}
