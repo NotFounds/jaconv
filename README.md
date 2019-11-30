@@ -10,11 +10,12 @@ A converter that Japanese Hiragana/Katakana and Romaji.
 
 ```golang
 text = "こんにちは"
-roman, err := jaconv.Kana2roman(text)
-if err != nil {
-    log.Fatal(err)
-}
-fmt.Println(roman) // konnnitiwa
+romaji := jaconv.Kana2Romaji(text)
+fmt.Println(romaji) // konnnichiha
+katakana := jaconv.Romaji2Kana(romaji)
+fmt.Println(katakana) // コンニチハ
+hiragana := jaconv.Katakana2Hiragana(katakana)
+fmt.Println(hiragana) // こんにちは
 ```
 
 ## Installation
@@ -22,6 +23,10 @@ fmt.Println(roman) // konnnitiwa
 ```sh
 go get github.com/NotFounds/jaconv
 ```
+
+## References
+
+[ヘボン式ローマ字綴方表 - 外務省](https://www.ezairyu.mofa.go.jp/passport/hebon.html)
 
 ## License
 
